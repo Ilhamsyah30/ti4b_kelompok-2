@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="195 205 1079 755" width="884px" height="550px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <line x1="711" y1="340" x2="721" y2="340" style="stroke:#333;stroke-width:1;"/>
+   <line x1="920" y1="520" x2="930" y2="520" style="stroke:#333;stroke-width:1;"/>
+   <line x1="721" y1="340" x2="920" y2="520" style="stroke:#333;stroke-width:1;"/>
+   <line x1="718.5" y1="340" x2="714.96446609407" y2="343.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="718.5" y1="340" x2="714.96446609407" y2="336.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="925" y1="520" x2="921.46446609407" y2="523.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="925" y1="520" x2="921.46446609407" y2="516.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="550" y1="320" x2="540" y2="320" style="stroke:#333;stroke-width:1;"/>
+   <line x1="364" y1="510" x2="354" y2="510" style="stroke:#333;stroke-width:1;"/>
+   <line x1="540" y1="320" x2="364" y2="510" style="stroke:#333;stroke-width:1;"/>
+   <line x1="542.5" y1="320" x2="546.03553390593" y2="323.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="542.5" y1="320" x2="546.03553390593" y2="316.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="359" y1="510" x2="362.53553390593" y2="513.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="359" y1="510" x2="362.53553390593" y2="506.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="550" y1="440" x2="540" y2="440" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="304" y1="250" x2="294" y2="250" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="540" y1="440" x2="304" y2="250" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="542.5" y1="440" x2="546.03553390593" y2="443.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="542.5" y1="440" x2="546.03553390593" y2="436.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="299" y1="250" x2="302.53553390593" y2="253.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="299" y1="250" x2="302.53553390593" y2="246.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <rect width="134" height="20" x="930" y="490" style="fill:#007;stroke:black;"/>
+   <text width="134" height="20" x="935" y="504" style="fill:#fff;" font-family="Arial" font-size="16px"> TBL_BOOKS</text>
+   <rect width="134" height="20" x="930" y="510" style="fill:#aea;stroke:black;"/>
+   <text width="134" height="20" x="935" y="524" style="fill:black;" font-family="Arial" font-size="16px">Id_Book</text>
+   <rect width="134" height="20" x="930" y="530" style="fill:none;stroke:black;"/>
+   <text width="134" height="20" x="935" y="544" style="fill:black;" font-family="Arial" font-size="16px">Title</text>
+   <rect width="134" height="20" x="930" y="550" style="fill:none;stroke:black;"/>
+   <text width="134" height="20" x="935" y="564" style="fill:black;" font-family="Arial" font-size="16px">Author</text>
+   <rect width="134" height="20" x="930" y="570" style="fill:none;stroke:black;"/>
+   <text width="134" height="20" x="935" y="584" style="fill:black;" font-family="Arial" font-size="16px">Publisher</text>
+   <rect width="134" height="20" x="930" y="590" style="fill:none;stroke:black;"/>
+   <text width="134" height="20" x="935" y="604" style="fill:black;" font-family="Arial" font-size="16px">PublicationYear</text>
+   <rect width="134" height="20" x="930" y="610" style="fill:none;stroke:black;"/>
+   <text width="134" height="20" x="935" y="624" style="fill:black;" font-family="Arial" font-size="16px">Genre</text>
+   <rect width="134" height="20" x="930" y="630" style="fill:none;stroke:black;"/>
+   <text width="134" height="20" x="935" y="644" style="fill:black;" font-family="Arial" font-size="16px">Status</text>
+   <rect width="134" height="20" x="930" y="650" style="fill:none;stroke:black;"/>
+   <text width="134" height="20" x="935" y="664" style="fill:black;" font-family="Arial" font-size="16px">RackLocation</text>
+   <rect width="134" height="20" x="930" y="670" style="fill:none;stroke:black;"/>
+   <text width="134" height="20" x="935" y="684" style="fill:black;" font-family="Arial" font-size="16px">ISBN</text>
+   <rect width="134" height="20" x="930" y="690" style="fill:none;stroke:black;"/>
+   <text width="134" height="20" x="935" y="704" style="fill:black;" font-family="Arial" font-size="16px">NumberOfCopies</text>
+   <rect width="144" height="20" x="210" y="480" style="fill:#007;stroke:black;"/>
+   <text width="144" height="20" x="215" y="494" style="fill:#fff;" font-family="Arial" font-size="16px"> TBL_MEMBER</text>
+   <rect width="144" height="20" x="210" y="500" style="fill:#aea;stroke:black;"/>
+   <text width="144" height="20" x="215" y="514" style="fill:black;" font-family="Arial" font-size="16px">Id_Member</text>
+   <rect width="144" height="20" x="210" y="520" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="534" style="fill:black;" font-family="Arial" font-size="16px">NIM</text>
+   <rect width="144" height="20" x="210" y="540" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="554" style="fill:black;" font-family="Arial" font-size="16px">FullName</text>
+   <rect width="144" height="20" x="210" y="560" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="574" style="fill:black;" font-family="Arial" font-size="16px">DateOfBirth</text>
+   <rect width="144" height="20" x="210" y="580" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="594" style="fill:black;" font-family="Arial" font-size="16px">Gender</text>
+   <rect width="144" height="20" x="210" y="600" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="614" style="fill:black;" font-family="Arial" font-size="16px">Email</text>
+   <rect width="144" height="20" x="210" y="620" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="634" style="fill:black;" font-family="Arial" font-size="16px">PhoneNumber</text>
+   <rect width="144" height="20" x="210" y="640" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="654" style="fill:black;" font-family="Arial" font-size="16px">Address</text>
+   <rect width="144" height="20" x="210" y="660" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="674" style="fill:black;" font-family="Arial" font-size="16px">JoinDate</text>
+   <rect width="144" height="20" x="210" y="680" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="694" style="fill:black;" font-family="Arial" font-size="16px">MembershipStatus</text>
+   <rect width="144" height="20" x="210" y="700" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="714" style="fill:black;" font-family="Arial" font-size="16px">YearOfStudy</text>
+   <rect width="144" height="20" x="210" y="720" style="fill:none;stroke:black;"/>
+   <text width="144" height="20" x="215" y="734" style="fill:black;" font-family="Arial" font-size="16px">StudyProgram</text>
+   <rect width="161" height="20" x="550" y="270" style="fill:#007;stroke:black;"/>
+   <text width="161" height="20" x="555" y="284" style="fill:#fff;" font-family="Arial" font-size="16px"> TBL_TRANSACTION</text>
+   <rect width="161" height="20" x="550" y="290" style="fill:#aea;stroke:black;"/>
+   <text width="161" height="20" x="555" y="304" style="fill:black;" font-family="Arial" font-size="16px">Id_Transaction</text>
+   <rect width="161" height="20" x="550" y="310" style="fill:none;stroke:black;"/>
+   <text width="161" height="20" x="555" y="324" style="fill:black;" font-family="Arial" font-size="16px">Id_Member</text>
+   <rect width="161" height="20" x="550" y="330" style="fill:none;stroke:black;"/>
+   <text width="161" height="20" x="555" y="344" style="fill:black;" font-family="Arial" font-size="16px">Id_Book</text>
+   <rect width="161" height="20" x="550" y="350" style="fill:none;stroke:black;"/>
+   <text width="161" height="20" x="555" y="364" style="fill:black;" font-family="Arial" font-size="16px">BorrowDate</text>
+   <rect width="161" height="20" x="550" y="370" style="fill:none;stroke:black;"/>
+   <text width="161" height="20" x="555" y="384" style="fill:black;" font-family="Arial" font-size="16px">DueDate</text>
+   <rect width="161" height="20" x="550" y="390" style="fill:none;stroke:black;"/>
+   <text width="161" height="20" x="555" y="404" style="fill:black;" font-family="Arial" font-size="16px">ReturnDate</text>
+   <rect width="161" height="20" x="550" y="410" style="fill:none;stroke:black;"/>
+   <text width="161" height="20" x="555" y="424" style="fill:black;" font-family="Arial" font-size="16px">Status</text>
+   <rect width="161" height="20" x="550" y="430" style="fill:none;stroke:black;"/>
+   <text width="161" height="20" x="555" y="444" style="fill:black;" font-family="Arial" font-size="16px">Id_User</text>
+   <rect width="84" height="20" x="210" y="220" style="fill:#007;stroke:black;"/>
+   <text width="84" height="20" x="215" y="234" style="fill:#fff;" font-family="Arial" font-size="16px"> TBL_USER</text>
+   <rect width="84" height="20" x="210" y="240" style="fill:#aea;stroke:black;"/>
+   <text width="84" height="20" x="215" y="254" style="fill:black;" font-family="Arial" font-size="16px">Id_User</text>
+   <rect width="84" height="20" x="210" y="260" style="fill:none;stroke:black;"/>
+   <text width="84" height="20" x="215" y="274" style="fill:black;" font-family="Arial" font-size="16px">Username</text>
+   <rect width="84" height="20" x="210" y="280" style="fill:none;stroke:black;"/>
+   <text width="84" height="20" x="215" y="294" style="fill:black;" font-family="Arial" font-size="16px">Password</text>
+   <rect width="84" height="20" x="210" y="300" style="fill:none;stroke:black;"/>
+   <text width="84" height="20" x="215" y="314" style="fill:black;" font-family="Arial" font-size="16px">FullName</text>
+   <rect width="84" height="20" x="210" y="320" style="fill:none;stroke:black;"/>
+   <text width="84" height="20" x="215" y="334" style="fill:black;" font-family="Arial" font-size="16px">Photo</text>
+   <rect width="84" height="20" x="210" y="340" style="fill:none;stroke:black;"/>
+   <text width="84" height="20" x="215" y="354" style="fill:black;" font-family="Arial" font-size="16px">Level</text>
+</svg>
