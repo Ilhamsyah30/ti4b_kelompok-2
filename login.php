@@ -77,7 +77,7 @@ if(isset($_POST['login'])) {
                                     <label>Password<span class="text-danger">*</span></label>
                                     <div class="input-group">
                                       <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
-                                      <input type="text" id="password" name="password" class="form-control" placeholder="Enter Password" required>
+                                      <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" required>
                                     </div>
                                   </div>
 
