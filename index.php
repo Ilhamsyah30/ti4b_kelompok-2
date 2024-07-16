@@ -36,13 +36,13 @@ $aksi = @$_GET['aksi'];
                 echo "List Book";
             }
             
-        } else if($page == 'user') {
+        } else if($page == 'member') {
             if($aksi == 'add') {
-                echo "Add User";
+                echo "Add member";
             } else if($aksi == 'ubah') {
-                echo "Edit User";
+                echo "Edit member";
             } else {
-                echo "List User";
+                echo "List member";
             }
         } else if($page == 'admin') {
             if($aksi == 'add') {
@@ -81,7 +81,7 @@ $aksi = @$_GET['aksi'];
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-lg-auto">
             <a class="nav-item nav-link <?php echo $page == '' ? 'active' : ''; ?>" href="index.php" aria-current="page">Dashboard</a>
-            <a class="nav-item nav-link <?php echo $page == 'user' ? 'active' : ''; ?>" href="?p=user">List Member</a>
+            <a class="nav-item nav-link <?php echo $page == 'member' ? 'active' : ''; ?>" href="?p=member">List Member</a>
             <a class="nav-item nav-link <?php echo $page == 'admin' ? 'active' : ''; ?>" href="?p=admin">List Admin</a>
             <a class="nav-item nav-link <?php echo $page == 'book' ? 'active' : ''; ?>" href="?p=book">List Book</a>
             <a class="nav-item nav-link <?php echo $page == 'transaction' ? 'active' : ''; ?>" href="?p=transaction">Transaction</a>
@@ -116,15 +116,15 @@ $aksi = @$_GET['aksi'];
               } else if($aksi == 'delete') {
                   require_once 'page/book/delete.php';
               }
-          } else if($page == 'user') {
+          } else if($page == 'member') {
               if($aksi == '') {
-                  require_once 'page/user/index.php';
+                  require_once 'page/member/index.php';
               } else if($aksi == 'add') {
-                  require_once 'page/user/add.php';
+                  require_once 'page/member/add.php';
               } else if($aksi == 'edit') {
-                  require_once 'page/user/edit.php';
+                  require_once 'page/member/edit.php';
               } else if($aksi == 'delete') {
-                  require_once 'page/user/delete.php';
+                  require_once 'page/member/delete.php';
               }
           } else if($page == 'admin') {
             if($aksi == '') {

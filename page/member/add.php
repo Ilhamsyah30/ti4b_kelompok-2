@@ -14,7 +14,7 @@ if(isset($_POST['add'])) {
 
 	$sql = $conn->query("INSERT INTO tbl_member VALUES (null, '$NIM', '$FullName', '$DateOfBirth', '$Gender', '$Email', '$PhoneNumber', '$Address', '$JoinDate', '$MembershipStatus', '$YearOfStudy', '$StudyProgram')") or die(mysqli_error($conn));
 	if($sql) {
-		echo "<script>alert('Success.');window.location='?p=user';</script>";
+		echo "<script>alert('Success.');window.location='?p=member';</script>";
 	} else {
 		echo "<script>alert('Failse.')</script>";
 	}
@@ -25,7 +25,7 @@ if(isset($_POST['add'])) {
   <nav class="mt-4" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-      <li class="breadcrumb-item"><a href="index.php?p=user">Member</a></li>
+      <li class="breadcrumb-item"><a href="index.php?p=member">Member</a></li>
       <li class="breadcrumb-item active" aria-current="page">Add Member</li>
     </ol>
   </nav>
@@ -81,7 +81,7 @@ if(isset($_POST['add'])) {
             </select>
           </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-primary" name="tambah">ADD</button>
+            <button type="submit" class="btn btn-primary" name="add">ADD</button>
           </div>
         </form>
       </div>

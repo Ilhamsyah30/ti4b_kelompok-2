@@ -13,7 +13,7 @@ $getUsers = $conn->query("SELECT * FROM tbl_member ORDER BY Id_Member DESC") or 
   <hr>
   <div class="row mt-4">
     <div class="col-md-12" class="">
-      <a href="?p=user&aksi=add" class="btn btn-primary mb-3"><i class="bi bi-plus"></i> Add Member</a>
+      <a href="?p=member&aksi=add" class="btn btn-primary mb-3"><i class="bi bi-plus"></i> Add Member</a>
       <div class="card mb-4">
           <div class="card-header">
             <i class="bi bi-table mr-1"></i>
@@ -48,8 +48,8 @@ $getUsers = $conn->query("SELECT * FROM tbl_member ORDER BY Id_Member DESC") or 
                         <td><?= $user['Address']; ?></td>
                         <td><?= $user['DateOfBirth']; ?></td>
                         <td>
-                            <a href="?p=user&aksi=edit&Id_Member=<?= $user['Id_Member']; ?>" class="btn btn-info btn-sm"><i class="bi bi-pencil"></i></a>
-                            <a href="?p=user&aksi=delete&Id_Member=<?= $user['Id_Member']; ?>" class="btn btn-danger btn-sm"><i class="bi bi-trash" onclick="return confirm('Yakin ?')"></i></a>
+                            <a href="?p=member&aksi=edit&Id_Member=<?= $user['Id_Member']; ?>" class="btn btn-info btn-sm"><i class="bi bi-pencil"></i></a>
+                            <a href="?p=member&aksi=delete&Id_Member=<?= $user['Id_Member']; ?>" class="btn btn-danger btn-sm"><i class="bi bi-trash" onclick="return confirm('Yakin ?')"></i></a>
                         </td>
                     </tr>
                     <?php } ?>
