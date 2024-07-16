@@ -1,5 +1,5 @@
 <?php 
-// menampilkan DB buku
+// menampilkan DB book
 $getBooks = $conn->query("SELECT * FROM tbl_books ORDER BY Id_Book DESC") or die(mysqli_error($conn));
 
 ?>
@@ -47,8 +47,8 @@ $getBooks = $conn->query("SELECT * FROM tbl_books ORDER BY Id_Book DESC") or die
                     <td><?= $book['ISBN']; ?></td>
                     <td><?= $book['NumberOfCopies']; ?></td>
                     <td>
-                      <a href="?p=buku&aksi=edit&Id_Book=<?= $book['Id_Book']; ?>" class="btn btn-info btn-sm"><i class="bi bi-pencil"></i></a>
-                      <a href="?p=buku&aksi=delete&Id_Book=<?= $book['Id_Book']; ?>" class="btn btn-danger btn-sm"><i class="bi bi-trash" onclick="return confirm('Yakin ?')"></i></a>
+                      <a href="?p=book&aksi=edit&Id_Book=<?= $book['Id_Book']; ?>" class="btn btn-info btn-sm"><i class="bi bi-pencil"></i></a>
+                      <a href="?p=book&aksi=delete&Id_Book=<?= $book['Id_Book']; ?>" class="btn btn-danger btn-sm"><i class="bi bi-trash" onclick="return confirm('Yakin ?')"></i></a>
                     </td>
                   </tr>
                   <?php } ?>
