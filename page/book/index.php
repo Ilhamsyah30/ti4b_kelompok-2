@@ -13,7 +13,7 @@ $getBooks = $conn->query("SELECT * FROM tbl_books ORDER BY Id_Book DESC") or die
   <hr>
   <div class="row mt-4">
     <div class="col-md-12" class="">
-      <a href="?p=buku&aksi=tambah" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Tambah Buku</a>
+      <a href="?p=book&aksi=add" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Add Book</a>
       <div class="card mb-4">
           <div class="card-header">
             <i class="fas fa-table mr-1"></i>
