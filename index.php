@@ -81,7 +81,7 @@ $aksi = @$_GET['aksi'];
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-lg-auto">
             <a class="nav-item nav-link <?php echo $page == '' ? 'active' : ''; ?>" href="index.php" aria-current="page">Dashboard</a>
-            <a class="nav-item nav-link <?php echo $page == 'user' ? 'active' : ''; ?>" href="?p=user">List User</a>
+            <a class="nav-item nav-link <?php echo $page == 'user' ? 'active' : ''; ?>" href="?p=user">List Member</a>
             <a class="nav-item nav-link <?php echo $page == 'admin' ? 'active' : ''; ?>" href="?p=admin">List Admin</a>
             <a class="nav-item nav-link <?php echo $page == 'book' ? 'active' : ''; ?>" href="?p=book">List Book</a>
             <a class="nav-item nav-link <?php echo $page == 'transaction' ? 'active' : ''; ?>" href="?p=transaction">Transaction</a>
