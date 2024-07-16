@@ -44,6 +44,14 @@ $aksi = @$_GET['aksi'];
             } else {
                 echo "List User";
             }
+        } else if($page == 'admin') {
+            if($aksi == 'add') {
+                echo "Add Admin";
+            } else if($aksi == 'ubah') {
+                echo "Edit Admin";
+            } else {
+                echo "List Admin";
+            }
         } else if($page == 'transaction') {
             if($aksi == 'add') {
                 echo "Add Transaction";
@@ -118,7 +126,17 @@ $aksi = @$_GET['aksi'];
               } else if($aksi == 'delete') {
                   require_once 'page/user/delete.php';
               }
-          } else if($page == 'transaction') {
+          } else if($page == 'admin') {
+            if($aksi == '') {
+                require_once 'page/admin/index.php';
+            } else if($aksi == 'add') {
+                require_once 'page/admin/add.php';
+            } else if($aksi == 'edit') {
+                require_once 'page/admin/edit.php';
+            } else if($aksi == 'delete') {
+                require_once 'page/admin/delete.php';
+            }
+        } else if($page == 'transaction') {
               if($aksi == '') {
                   require_once 'page/transaction/index.php';
               } else if($aksi == 'tambah') {
