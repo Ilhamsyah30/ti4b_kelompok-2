@@ -139,7 +139,7 @@ $aksi = @$_GET['aksi'];
         } else if($page == 'transaction') {
               if($aksi == '') {
                   require_once 'page/transaction/index.php';
-              } else if($aksi == 'tambah') {
+              } else if($aksi == 'add') {
                   require_once 'page/transaction/add.php';
               } else if($aksi == 'back') {
                   require_once 'page/transaction/back.php';
