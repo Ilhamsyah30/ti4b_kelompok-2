@@ -23,11 +23,11 @@ $getBooks = $conn->query("SELECT * FROM tbl_books ORDER BY Id_Book DESC") or die
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Judul</th>
-                        <th>Pengarang</th>
-                        <th>Penerbit</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
                         <th>ISBN</th>
-                        <th>Jumlah Buku</th>
+                        <th>Total</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>

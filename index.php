@@ -12,7 +12,7 @@ $aksi = @$_GET['aksi'];
 
 // masih bug
 // di halaman tambah transaksi
-// di halaman transaksi/perpanjang.php
+// di halaman transaction/perpanjang.php
 ?>
 <!-- <pre>
 <?php var_dump($_SESSION['login']);  ?>
@@ -27,28 +27,28 @@ $aksi = @$_GET['aksi'];
     <meta name="author" content="" />
     <title>
         <?php
-        if($page == 'buku') {
-            if($aksi == 'tambah') {
-                echo "Tambah Buku";
-            } else if($aksi == 'ubah') {
-                echo "Ubah Buku";
+        if($page == 'book') {
+            if($aksi == 'add') {
+                echo "Add Book";
+            } else if($aksi == 'edit') {
+                echo "Edit Book";
             } else {
-                echo "Halaman Buku";
+                echo "List Book";
             }
             
-        } else if($page == 'anggota') {
-            if($aksi == 'tambah') {
-                echo "Tambah Anggota";
+        } else if($page == 'user') {
+            if($aksi == 'add') {
+                echo "Add User";
             } else if($aksi == 'ubah') {
-                echo "Ubah Anggota";
+                echo "Edit User";
             } else {
-                echo "Halaman Anggota";
+                echo "List User";
             }
-        } else if($page == 'transaksi') {
-            if($aksi == 'tambah') {
-                echo "Tambah Transaksi";
+        } else if($page == 'transaction') {
+            if($aksi == 'add') {
+                echo "Add Transaction";
             } else {
-                echo "Halaman Transaksi";
+                echo "List Transaction";
             }
         } else {
             echo "Dashboard";
@@ -72,10 +72,10 @@ $aksi = @$_GET['aksi'];
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-lg-auto">
-            <a class="nav-item nav-link active" href="index.php" aria-current="page">Dashboard</a>
-            <a class="nav-item nav-link" href="?p=anggota">Data Anggota</a>
-            <a class="nav-item nav-link" href="?p=buku">Data Buku</a>
-            <a class="nav-item nav-link" href="?p=transaksi">Transaksi</a>
+            <a class="nav-item nav-link" href="index.php" aria-current="page">Dashboard</a>
+            <a class="nav-item nav-link" href="?p=user">List User</a>
+            <a class="nav-item nav-link" href="?p=book">List Book</a>
+            <a class="nav-item nav-link" href="?p=transaction">Transaction</a>
           </div>
 
           <!-- <div class="navbar-nav ms-lg-4">
@@ -91,11 +91,54 @@ $aksi = @$_GET['aksi'];
       </div>
     </nav>
 
-    <div class="p-10 bg-surface-secondary">
-      <div class="mb-8 text-center">
-        <h3 class="mb-2">with <a href="https://github.com/webpixels/css" target="_blank">Kelompok 2</a></h3>
-        <p>Content here ....</p>
-      </div>
+    <div id="layoutSidenav_content">
+      <main>
+          <div class="container-fluid">
+              <!-- <h1 class="mt-4">Static Navigation</h1> -->
+          <?php 
+
+          if($page == 'book') {
+              if($aksi == '') {
+                  require_once 'page/book/index.php';
+              } else if($aksi == 'add') {
+                  require_once 'page/book/add.php';
+              } else if($aksi == 'edit') {
+                  require_once 'page/book/edit.php';
+              } else if($aksi == 'delete') {
+                  require_once 'page/book/delete.php';
+              }
+          } else if($page == 'user') {
+              if($aksi == '') {
+                  require_once 'page/user/index.php';
+              } else if($aksi == 'add') {
+                  require_once 'page/user/add.php';
+              } else if($aksi == 'edit') {
+                  require_once 'page/user/edit.php';
+              } else if($aksi == 'delete') {
+                  require_once 'page/user/delete.php';
+              }
+          } else if($page == 'transaction') {
+              if($aksi == '') {
+                  require_once 'page/transaction/index.php';
+              } else if($aksi == 'tambah') {
+                  require_once 'page/transaction/add.php';
+              } else if($aksi == 'back') {
+                  require_once 'page/transaction/back.php';
+              } else if($aksi == 'extend') {
+                  require_once 'page/transaction/extend.php';
+              }
+          } else { ?>
+              <h1 class="mt-4">Dashboard</h1>
+              <ol class="breadcrumb mb-4">
+                  <!-- <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li> -->
+                  <li class="breadcrumb-item active">dashboard</li>
+              </ol>
+          <?php
+          }
+          ?>
+              
+          </div>
+      </main>
     </div>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
