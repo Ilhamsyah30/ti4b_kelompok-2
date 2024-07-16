@@ -29,7 +29,7 @@ if(isset($_POST['tambah'])) {
   </nav>
   <div class="card mb-4">
       <div class="card-header">
-        <i class="fas fa-table mr-1"></i>
+        <i class="bi bi-plus mr-1"></i>
         Add Book
       </div>
       <div class="card-body">
