@@ -13,10 +13,10 @@ $getBooks = $conn->query("SELECT * FROM tbl_books ORDER BY Id_Book DESC") or die
   <hr>
   <div class="row mt-4">
     <div class="col-md-12" class="">
-      <a href="?p=book&aksi=add" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Add Book</a>
+      <a href="?p=book&aksi=add" class="btn btn-primary mb-3"><i class="bi bi-plus"></i> Add Book</a>
       <div class="card mb-4">
           <div class="card-header">
-            <i class="fas fa-table mr-1"></i>
+            <i class="bi bi-table mr-1"></i>
             List Book
           </div>
           <div class="card-body">
@@ -47,8 +47,8 @@ $getBooks = $conn->query("SELECT * FROM tbl_books ORDER BY Id_Book DESC") or die
                     <td><?= $book['ISBN']; ?></td>
                     <td><?= $book['NumberOfCopies']; ?></td>
                     <td>
-                      <a href="?p=buku&aksi=ubah&id=<?= $book['Id_Book']; ?>" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
-                      <a href="?p=buku&aksi=hapus&id=<?= $book['Id_Book']; ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash" onclick="return confirm('Yakin ?')"></i></a>
+                      <a href="?p=buku&aksi=edit&Id_Book=<?= $book['Id_Book']; ?>" class="btn btn-info btn-sm"><i class="bi bi-pencil"></i></a>
+                      <a href="?p=buku&aksi=delete&Id_Book=<?= $book['Id_Book']; ?>" class="btn btn-danger btn-sm"><i class="bi bi-trash" onclick="return confirm('Yakin ?')"></i></a>
                     </td>
                   </tr>
                   <?php } ?>

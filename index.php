@@ -56,7 +56,7 @@ $aksi = @$_GET['aksi'];
         ?>
     </title>
     <link href="libs\bootstrap\css\bootstrap.min.css" rel="stylesheet" />
-    <link href="libs\bootstrap\css\bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link href="css\style.css" rel="stylesheet" />
 
     <script src="libs\jquery.js"></script>
