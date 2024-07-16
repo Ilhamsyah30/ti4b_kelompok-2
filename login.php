@@ -11,10 +11,10 @@ if(isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $result = $conn->query("SELECT * FROM tb_user WHERE username = '$username'") or die(mysqli_error($conn));
+    $result = $conn->query("SELECT * FROM tbl_user WHERE Username = '$username'") or die(mysqli_error($conn));
     if($result->num_rows === 1) {
         $row = $result->fetch_assoc();
-        if(password_verify($password, $row['password'])) {
+        if(password_verify($password, $row['Password'])) {
             // pasang session
             $_SESSION['login'] = $row;
 

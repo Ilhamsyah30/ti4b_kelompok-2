@@ -72,10 +72,10 @@ $aksi = @$_GET['aksi'];
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-lg-auto">
-            <a class="nav-item nav-link active" href="#" aria-current="page">Dashboard</a>
-            <a class="nav-item nav-link" href="#">Data Anggota</a>
-            <a class="nav-item nav-link" href="#">Data Buku</a>
-            <a class="nav-item nav-link" href="#">Transaksi</a>
+            <a class="nav-item nav-link active" href="index.php" aria-current="page">Dashboard</a>
+            <a class="nav-item nav-link" href="?p=anggota">Data Anggota</a>
+            <a class="nav-item nav-link" href="?p=buku">Data Buku</a>
+            <a class="nav-item nav-link" href="?p=transaksi">Transaksi</a>
           </div>
 
           <!-- <div class="navbar-nav ms-lg-4">
