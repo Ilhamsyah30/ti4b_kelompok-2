@@ -2,7 +2,7 @@
 if(isset($_POST['add'])) {
 	$FullName = htmlspecialchars($_POST['FullName']);
 	$UserName = htmlspecialchars($_POST['UserName']);
-	$Password = htmlspecialchars($_POST['Password']);
+	$Password = password_hash(htmlspecialchars($_POST['Password']), PASSWORD_DEFAULT);
 
 	$sql = $conn->query("INSERT INTO tbl_user VALUES (null, '$UserName', '$Password', '$FullName')") or die(mysqli_error($conn));
 	if($sql) {
