@@ -10,9 +10,8 @@ if(isset($_POST['edit'])) {
 	$FullName = htmlspecialchars($_POST['FullName']);
 	$UserName = htmlspecialchars($_POST['UserName']);
 	$Password = htmlspecialchars($_POST['Password']);
-	$Level = htmlspecialchars($_POST['Level']);
 
-	$sql = $conn->query("UPDATE tbl_user SET Username = '$UserName', FullName = '$FullName', Password = '$Password', Level = '$Level' WHERE Id_User = $idUser") or die(mysqli_error($conn));
+	$sql = $conn->query("UPDATE tbl_user SET Username = '$UserName', FullName = '$FullName', Password = '$Password', WHERE Id_User = $idUser") or die(mysqli_error($conn));
 	if($sql) {
 		echo "<script>alert('Success.');window.location='?p=admin';</script>";
 	} else {
@@ -48,14 +47,6 @@ if(isset($_POST['edit'])) {
         <div class="mb-3">
           <label for="Password" class="form-label">Password</label>
           <input type="password" class="form-control" id="Password" name="Password" value="<?= $admin['Password']; ?>" placeholder="ex ...">
-        </div>
-        <div class="mb-3">
-          <label for="Level" class="form-label">Level</label>
-          <select name="Level" id="Level" class="form-control" required>
-            <option value="">-- Select Level --</option>
-            <option value="Admin">Admin</option>
-            <option value="Member">Member</option>
-          </select>
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary" name="edit">EDIT</button>

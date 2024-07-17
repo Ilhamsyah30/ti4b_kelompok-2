@@ -27,7 +27,6 @@ $getAdmins = $conn->query("SELECT * FROM tbl_user ORDER BY Id_User DESC") or die
                     <th>No</th>
                     <th>Username</th>
                     <th>FullName</th>
-                    <th>Level</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -41,7 +40,6 @@ $getAdmins = $conn->query("SELECT * FROM tbl_user ORDER BY Id_User DESC") or die
                     <td><?= $no++; ?></td>
                     <td><?= $admin['Username']; ?></td>
                     <td><?= $admin['FullName']; ?></td>
-                    <td><?= $admin['Level']; ?></td>
                     <td>
                       <a href="?p=admin&aksi=edit&id=<?= $admin['Id_User']; ?>" class="btn btn-info btn-sm"><i class="bi bi-pencil"></i></a>
                       <a href="?p=admin&aksi=delete&id=<?= $admin['Id_User']; ?>" class="btn btn-danger btn-sm"><i class="bi bi-trash" onclick="return confirm('Yakin ?')"></i></a>
