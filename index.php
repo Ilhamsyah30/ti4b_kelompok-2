@@ -151,11 +151,27 @@ $aksi = @$_GET['aksi'];
                   require_once 'page/transaction/extend.php';
               }
           } else { ?>
-              <h1 class="mt-4">Dashboard</h1>
-              <ol class="breadcrumb mb-4">
-                  <!-- <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li> -->
-                  <li class="breadcrumb-item active">dashboard</li>
-              </ol>
+            <div class="container">
+              <nav class="mt-4" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                </ol>
+              </nav>
+              <hr>
+              <div class="row mt-4">
+                <div class="col-md-12" class="">
+                  <h4><b>Teknik Informatika 4B</b></h4>
+                  <h4><b>Nama Kelompok:</b></h4>
+                  <ul>
+                    <li>Muhammad Reza Nurjaman</li>
+                    <li>Ilham Andriansyah</li>
+                    <li>Fajar Alfayet</li>
+                    <li>Dio Andia</li>
+                    <li>Diki Ruhimat</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           <?php
           }
           ?>
