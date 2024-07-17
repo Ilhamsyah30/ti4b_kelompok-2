@@ -136,11 +136,15 @@ $aksi = @$_GET['aksi'];
             } else if($aksi == 'delete') {
                 require_once 'page/admin/delete.php';
             }
-        } else if($page == 'transaction') {
+        } else if($page == 'transaction' || $page == 'transactionReturned') {
               if($aksi == '') {
-                  require_once 'page/transaction/index.php';
+                if($page == 'transactionReturned') {
+                    require_once 'page/transaction/return.php';
+                } else {
+                    require_once 'page/transaction/index.php';
+                }
               } else if($aksi == 'add') {
-                  require_once 'page/transaction/add.php';
+                require_once 'page/transaction/add.php';
               } else if($aksi == 'back') {
                   require_once 'page/transaction/back.php';
               } else if($aksi == 'extend') {
