@@ -12,7 +12,7 @@ if($lambat > 3) {
 	$next7Hari = mktime(0,0,0, $pecah_tgl_kembali[1], $pecah_tgl_kembali[0] + 7, $pecah_tgl_kembali[2]);
 	$hari_next = date('d-m-Y', $next7Hari);
 
-	$sql = $conn->query("UPDATE TBL_TRANSACTION SET DueDate = '$hari_next' WHERE Id_Transaction = $id_transaksi") or die(mysqli_error($conn));
+	$sql = $conn->query("UPDATE tbl_transaction SET DueDate = '$hari_next' WHERE Id_Transaction = $id_transaksi") or die(mysqli_error($conn));
 
 	if($sql) {
 		echo "<script>alert('Perpanjang jangka waktu buku berhasil.');window.location='?p=transaction';</script>";

@@ -11,7 +11,7 @@ function terlambat($tgl_dateline, $tgl_kembali) {
 	$selisih = $selisih/86400;
 	if ($selisih >= 1) {
 		$hasil_tgl = floor($selisih);
-		// $conn->query("UPDATE TBL_TRANSACTION SET StatusTransaction = 'Overdue' WHERE Id_Transaction = $Id_Transaction") or die(mysqli_error($conn));
+		// $conn->query("UPDATE tbl_transaction SET StatusTransaction = 'Overdue' WHERE Id_Transaction = $Id_Transaction") or die(mysqli_error($conn));
 	}else{
 		$hasil_tgl = 0;
 	}

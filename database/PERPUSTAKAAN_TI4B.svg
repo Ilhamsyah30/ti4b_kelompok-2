@@ -25,7 +25,7 @@ PUBLIC "-//W3C//DTD SVG 1.1//EN"
    <line x1="299" y1="250" x2="302.53553390593" y2="253.53553390593" style="stroke:#bbb;stroke-width:2;"/>
    <line x1="299" y1="250" x2="302.53553390593" y2="246.46446609407" style="stroke:#bbb;stroke-width:2;"/>
    <rect width="134" height="20" x="930" y="490" style="fill:#007;stroke:black;"/>
-   <text width="134" height="20" x="935" y="504" style="fill:#fff;" font-family="Arial" font-size="16px"> TBL_BOOKS</text>
+   <text width="134" height="20" x="935" y="504" style="fill:#fff;" font-family="Arial" font-size="16px"> tbl_books</text>
    <rect width="134" height="20" x="930" y="510" style="fill:#aea;stroke:black;"/>
    <text width="134" height="20" x="935" y="524" style="fill:black;" font-family="Arial" font-size="16px">Id_Book</text>
    <rect width="134" height="20" x="930" y="530" style="fill:none;stroke:black;"/>
@@ -47,7 +47,7 @@ PUBLIC "-//W3C//DTD SVG 1.1//EN"
    <rect width="134" height="20" x="930" y="690" style="fill:none;stroke:black;"/>
    <text width="134" height="20" x="935" y="704" style="fill:black;" font-family="Arial" font-size="16px">NumberOfCopies</text>
    <rect width="144" height="20" x="210" y="480" style="fill:#007;stroke:black;"/>
-   <text width="144" height="20" x="215" y="494" style="fill:#fff;" font-family="Arial" font-size="16px"> TBL_MEMBER</text>
+   <text width="144" height="20" x="215" y="494" style="fill:#fff;" font-family="Arial" font-size="16px"> tbl_member</text>
    <rect width="144" height="20" x="210" y="500" style="fill:#aea;stroke:black;"/>
    <text width="144" height="20" x="215" y="514" style="fill:black;" font-family="Arial" font-size="16px">Id_Member</text>
    <rect width="144" height="20" x="210" y="520" style="fill:none;stroke:black;"/>
@@ -73,7 +73,7 @@ PUBLIC "-//W3C//DTD SVG 1.1//EN"
    <rect width="144" height="20" x="210" y="720" style="fill:none;stroke:black;"/>
    <text width="144" height="20" x="215" y="734" style="fill:black;" font-family="Arial" font-size="16px">StudyProgram</text>
    <rect width="161" height="20" x="550" y="270" style="fill:#007;stroke:black;"/>
-   <text width="161" height="20" x="555" y="284" style="fill:#fff;" font-family="Arial" font-size="16px"> TBL_TRANSACTION</text>
+   <text width="161" height="20" x="555" y="284" style="fill:#fff;" font-family="Arial" font-size="16px"> tbl_transaction</text>
    <rect width="161" height="20" x="550" y="290" style="fill:#aea;stroke:black;"/>
    <text width="161" height="20" x="555" y="304" style="fill:black;" font-family="Arial" font-size="16px">Id_Transaction</text>
    <rect width="161" height="20" x="550" y="310" style="fill:none;stroke:black;"/>
@@ -91,7 +91,7 @@ PUBLIC "-//W3C//DTD SVG 1.1//EN"
    <rect width="161" height="20" x="550" y="430" style="fill:none;stroke:black;"/>
    <text width="161" height="20" x="555" y="444" style="fill:black;" font-family="Arial" font-size="16px">Id_User</text>
    <rect width="84" height="20" x="210" y="220" style="fill:#007;stroke:black;"/>
-   <text width="84" height="20" x="215" y="234" style="fill:#fff;" font-family="Arial" font-size="16px"> TBL_USER</text>
+   <text width="84" height="20" x="215" y="234" style="fill:#fff;" font-family="Arial" font-size="16px"> tbl_user</text>
    <rect width="84" height="20" x="210" y="240" style="fill:#aea;stroke:black;"/>
    <text width="84" height="20" x="215" y="254" style="fill:black;" font-family="Arial" font-size="16px">Id_User</text>
    <rect width="84" height="20" x="210" y="260" style="fill:none;stroke:black;"/>

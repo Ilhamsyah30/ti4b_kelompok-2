@@ -5,7 +5,7 @@ if(isset($_POST['add'])) {
 	$Password = htmlspecialchars($_POST['Password']);
 	$Level = htmlspecialchars($_POST['Level']);
 
-	$sql = $conn->query("INSERT INTO TBL_USER VALUES (null, '$UserName', '$Password', '$FullName', '$Level')") or die(mysqli_error($conn));
+	$sql = $conn->query("INSERT INTO tbl_user VALUES (null, '$UserName', '$Password', '$FullName', '$Level')") or die(mysqli_error($conn));
 	if($sql) {
 		echo "<script>alert('Success.');window.location='?p=admin';</script>";
 	} else {
@@ -29,7 +29,7 @@ if(isset($_POST['add'])) {
       </div>
       <div class="card-body">
         <form action="" method="post">
-        <div class="mb-3">
+          <div class="mb-3">
             <label for="FullName" class="form-label">Full Name</label>
             <input type="text" class="form-control" id="FullName" name="FullName" placeholder="ex ..." required>
           </div>

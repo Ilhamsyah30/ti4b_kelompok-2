@@ -1,6 +1,6 @@
 <?php 
 // menampilkan DB Users
-$getAdmins = $conn->query("SELECT * FROM TBL_USER ORDER BY Id_User DESC") or die(mysqli_error($conn));
+$getAdmins = $conn->query("SELECT * FROM tbl_user ORDER BY Id_User DESC") or die(mysqli_error($conn));
 
 ?>
 <div class="container">

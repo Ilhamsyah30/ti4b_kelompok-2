@@ -1,7 +1,7 @@
 <?php 
-$ViewNameBooks = $conn->query("SELECT * FROM TBL_BOOKS ORDER BY Id_Book") or die(mysqli_error($conn));
+$ViewNameBooks = $conn->query("SELECT * FROM tbl_books ORDER BY Id_Book") or die(mysqli_error($conn));
 
-$ViewNameMember = $conn->query("SELECT * FROM TBL_MEMBER ORDER BY NIM") or die(mysqli_error($conn));
+$ViewNameMember = $conn->query("SELECT * FROM tbl_member ORDER BY NIM") or die(mysqli_error($conn));
 
 $tgl_pinjam = date('d-m-Y');
 $tujuh_hari = mktime(0,0,0, date('n'), date('j') + 7, date('Y'));
@@ -21,7 +21,7 @@ if(isset($_POST['add'])) {
     $nim = $pecahN[0];
     $nama = $pecahN[1];
     
-    $sql = $conn->query("SELECT * FROM TBL_BOOKS WHERE Title = '$judul'") or die(mysqli_error($conn));
+    $sql = $conn->query("SELECT * FROM tbl_books WHERE Title = '$judul'") or die(mysqli_error($conn));
     while($data = $sql->fetch_assoc()) {
         $sisa = $data['NumberOfCopies'];
         
@@ -29,8 +29,8 @@ if(isset($_POST['add'])) {
             echo "<script>alert('Stok Buku Habis, Transaksi, tidak dapat dilakukan, silahkan tambahkan stok buku dulu.');window.location='?p=transaction&aksi=add';</script>";
         } else {
             // var_dump(null, $nim, $id, $tgl_pinjam, $tgl_kembali, null, 'Borrowed'); die;
-            $conn->query("INSERT INTO TBL_TRANSACTION VALUES(null, '$nim', '$id', '$tgl_pinjam', '$tgl_kembali', null, 'Borrowed')") or die(mysqli_error($conn));
-            $conn->query("UPDATE TBL_BOOKS SET NumberOfCopies = (NumberOfCopies-1) WHERE Id_Book = '$id'") or die(mysqli_error($conn));
+            $conn->query("INSERT INTO tbl_transaction VALUES(null, '$nim', '$id', '$tgl_pinjam', '$tgl_kembali', null, 'Borrowed')") or die(mysqli_error($conn));
+            $conn->query("UPDATE tbl_books SET NumberOfCopies = (NumberOfCopies-1) WHERE Id_Book = '$id'") or die(mysqli_error($conn));
             echo "<script>alert('Data transaksi berhasil ditambahkan.');window.location='?p=transaction';</script>";
         }
     }

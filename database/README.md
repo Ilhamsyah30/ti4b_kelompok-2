@@ -1,6 +1,6 @@
 Database: `PERPUSTAKAAN_TI4B`
 
-| TBL_BOOKS         |                                                              |
+| tbl_books         |                                                              |
 | ----------------- | ------------------------------------------------------------ |
 | `Id_Book`         | int(11) NOT NULL,                                            |
 | `Title`           | varchar(255) NOT NULL,                                       |
@@ -15,7 +15,7 @@ Database: `PERPUSTAKAAN_TI4B`
 
 
 
-| TBL_MEMBER         |                                                      |
+| tbl_member         |                                                      |
 | ------------------ | ---------------------------------------------------- |
 | `Id_Member`        | int(11) NOT NULL,                                    |
 | `NIM`              | int(11) NOT NULL,                                    |
@@ -33,7 +33,7 @@ Database: `PERPUSTAKAAN_TI4B`
 
 
 
-| TBL_TRANSACTION  |                                                 |
+| tbl_transaction  |                                                 |
 | ---------------- | ----------------------------------------------- |
 | `Id_Transaction` | int(11) NOT NULL,                               |
 | `Id_Member`      | int(11) NOT NULL,                               |
@@ -46,7 +46,7 @@ Database: `PERPUSTAKAAN_TI4B`
 
 
 
-| TBL_USER   |                                 |
+| tbl_user   |                                 |
 | ---------- | ------------------------------- |
 | `Id_User`  | int(11) NOT NULL,               |
 | `Username` | varchar(50) NOT NULL,           |

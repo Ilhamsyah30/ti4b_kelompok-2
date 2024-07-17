@@ -1,9 +1,9 @@
 <?php 
 require_once 'function.php';
 
-$getTransactions = $conn->query("SELECT * FROM TBL_TRANSACTION INNER JOIN TBL_MEMBER 
-										ON TBL_TRANSACTION.Id_Member = TBL_MEMBER.Id_Member INNER JOIN TBL_BOOKS
-										ON TBL_TRANSACTION.Id_Book = TBL_BOOKS.Id_Book WHERE StatusTransaction != 'Returned'  
+$getTransactions = $conn->query("SELECT * FROM tbl_transaction INNER JOIN tbl_member 
+										ON tbl_transaction.Id_Member = tbl_member.Id_Member INNER JOIN tbl_books
+										ON tbl_transaction.Id_Book = tbl_books.Id_Book WHERE StatusTransaction != 'Returned'  
 										") or die(mysqli_error($conn));
 
 ?>

@@ -10,7 +10,7 @@ if(isset($_POST['tambah'])) {
 	$ISBN = htmlspecialchars($_POST['ISBN']);
 	$NumberOfCopies = htmlspecialchars($_POST['NumberOfCopies']);
 
-	$sql = $conn->query("INSERT INTO TBL_BOOKS VALUES (null, '$Title', '$Author', '$Publisher', '$PublicationYear', '$Genre', '$Status', '$RackLocation', '$ISBN', '$NumberOfCopies')") or die(mysqli_error($conn));
+	$sql = $conn->query("INSERT INTO tbl_books VALUES (null, '$Title', '$Author', '$Publisher', '$PublicationYear', '$Genre', '$Status', '$RackLocation', '$ISBN', '$NumberOfCopies')") or die(mysqli_error($conn));
 	if($sql) {
 		echo "<script>alert('Success.');window.location='?p=book';</script>";
 	} else {

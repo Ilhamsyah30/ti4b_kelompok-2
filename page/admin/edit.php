@@ -2,7 +2,7 @@
 
 $Id_User = $_GET['id'];
 
-$getUser = $conn->query("SELECT * FROM TBL_USER WHERE Id_User = $Id_User") or die(mysqli_error($conn));
+$getUser = $conn->query("SELECT * FROM tbl_user WHERE Id_User = $Id_User") or die(mysqli_error($conn));
 $admin = $getUser->fetch_assoc();
 
 if(isset($_POST['edit'])) {
@@ -12,7 +12,7 @@ if(isset($_POST['edit'])) {
 	$Password = htmlspecialchars($_POST['Password']);
 	$Level = htmlspecialchars($_POST['Level']);
 
-	$sql = $conn->query("UPDATE TBL_USER SET Username = '$UserName', FullName = '$FullName', Password = '$Password', Level = '$Level' WHERE Id_User = $idUser") or die(mysqli_error($conn));
+	$sql = $conn->query("UPDATE tbl_user SET Username = '$UserName', FullName = '$FullName', Password = '$Password', Level = '$Level' WHERE Id_User = $idUser") or die(mysqli_error($conn));
 	if($sql) {
 		echo "<script>alert('Success.');window.location='?p=admin';</script>";
 	} else {
