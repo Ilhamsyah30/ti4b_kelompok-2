@@ -58,6 +58,8 @@ $aksi = @$_GET['aksi'];
             } else {
                 echo "List Transaction";
             }
+        } else if($page == 'laporan') {
+            echo "Laporan";
         } else {
             echo "Dashboard";
         }
@@ -67,9 +69,14 @@ $aksi = @$_GET['aksi'];
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link href="css\style.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <script src="libs\jquery.js"></script>
     <script src="libs\bootstrap\js\bootstrap.min.js"></script>
     <script src="libs\script.js"></script>
+    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3">
@@ -85,6 +92,7 @@ $aksi = @$_GET['aksi'];
             <a class="nav-item nav-link <?php echo $page == 'admin' ? 'active' : ''; ?>" href="?p=admin">List Admin</a>
             <a class="nav-item nav-link <?php echo $page == 'book' ? 'active' : ''; ?>" href="?p=book">List Book</a>
             <a class="nav-item nav-link <?php echo $page == 'transaction' ? 'active' : ''; ?>" href="?p=transaction">Transaction</a>
+            <a class="nav-item nav-link <?php echo $page == 'laporan' ? 'active' : ''; ?>" href="?p=laporan">Laporan</a>
           </div>
 
           <!-- <div class="navbar-nav ms-lg-4">
@@ -150,7 +158,9 @@ $aksi = @$_GET['aksi'];
               } else if($aksi == 'extend') {
                   require_once 'page/transaction/extend.php';
               }
-          } else { ?>
+        } else if ($page == 'laporan') {
+          require_once 'page/laporan/index.php';
+        } else { ?>
             <div class="container">
               <nav class="mt-4" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -182,5 +192,11 @@ $aksi = @$_GET['aksi'];
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
     <script src="assets/demo/datatables-demo.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
   </body>
 </html>
