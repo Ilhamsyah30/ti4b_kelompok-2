@@ -59,7 +59,7 @@ if(isset($_POST['login'])) {
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
-              <h3 class="mb-3">Login Perpustakaan</h3>
+              <h3 class="mb-3">Login BookZone</h3>
                 <div class="bg-white shadow rounded">
                     <div class="row">
                         <div class="col-md-7 pe-0">
@@ -101,7 +101,7 @@ if(isset($_POST['login'])) {
                         <div class="col-md-5 ps-0 d-none d-md-block">
                             <div class="form-right h-100 bg-primary text-white text-center pt-5">
                                 <i class="bi bi-bootstrap"></i>
-                                <h2 class="fs-1">Welcome Back!!!</h2>
+                                <h2 class="fs-1">BookZone!!!</h2>
                             </div>
                         </div>
                     </div>

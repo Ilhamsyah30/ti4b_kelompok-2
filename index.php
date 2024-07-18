@@ -81,7 +81,7 @@ $aksi = @$_GET['aksi'];
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3">
       <div class="container-xl">
-        <a class="navbar-brand" href="#">Perpustakaan</a>
+        <a class="navbar-brand" href="#">BookZone</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
